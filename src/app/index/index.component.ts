@@ -6,8 +6,7 @@ import { MenuComponent } from "../menu/menu.component";
   selector: 'app-index',
   standalone: true,
   templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css'],
-  imports: [MenuComponent]
+  styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
   isLogged = false;

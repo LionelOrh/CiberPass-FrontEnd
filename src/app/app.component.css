@@ -1,3 +1,30 @@
-.box {
-    min-height: 100%; 
+.layout{
+  display: flex;
+  height: 100vh;
+}
+
+.menu {
+  width: 18%;
+  min-width: 250px;
+  background-color: #19495F;
+}
+
+.content{
+  width: 82%;
+  padding: 0px 20px;
+  overflow-y: auto;
+}
+
+
+@media (max-width:768px){
+  .layout{
+    flex-direction: column;
   }
+  .menu{
+    width: 100%;
+    height: auto;
+  }
+  .content{
+    width: 100%;
+  }
+}
